@@ -35,6 +35,7 @@ try:
 	driver.get(convert)
 	if '.png' in saveitas:
 		screenshot = driver.save_screenshot('screenshots/'+saveitas)
+		print("Image is successfully saved on screenshots folder, do check it :) ")
 	else:
 		print("Please save the picture with .png extension :) ")
 	driver.quit()
