@@ -34,7 +34,7 @@ try:
 	driver = webdriver.Chrome(DRIVER)
 	driver.get(convert)
 	if '.png' in saveitas:
-		screenshot = driver.save_screenshot('screenshots/'+saveitas)
+		screenshot = driver.save_screenshot(saveitas)
 		print("Image is successfully saved on screenshots folder, do check it :) ")
 	else:
 		print("Please save the picture with .png extension :) ")
